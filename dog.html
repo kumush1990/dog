@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Движущаяся собака</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #eef;
+    }
+
+    .dog {
+      position: absolute;
+      width: 150px;
+      animation: moveRight 5s linear infinite;
+    }
+
+    @keyframes moveRight {
+      0% { left: -150px; top: 200px; }
+      100% { left: 100%; top: 200px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Здесь подключаем изображение -->
+  <img class="dog" src="dog.png" alt="Собака">
+
+</body>
+</html>
+
+
